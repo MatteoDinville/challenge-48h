@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.headercontainer{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1415px;
+    padding: 0 15px;
+    width: 100%;
+}
+.menuheader{
+    align-items: center;
+    display: flex;
+}
+
+.menuitems{
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+.firstScreen{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.firstScreenSlider{
+    width: 100%;
+}
+.slick-list{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
