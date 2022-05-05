@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>NFT RPG</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="navbar">
@@ -17,43 +20,49 @@
                 <div class="menuitems">
                     <a href="#home" class="active">Home</a>
                     <a href="#game">Game</a>
-                    <a href="#choix3">Choix3</a>
-                    <a href="#choix4">Choix4</a>
+                    <a href="#choix3">FAQ</a>
+                    <a href="#choix4">Account</a>
                 </div>
             </menu>
             <div class="social">
-                <a href="#">Facebook</a>
-                <a href="#">Twitter</a>
-                <a href="#">Github</a>
+                <a href="#"><img src="./instagram.png" alt=""></a>
+                <a href="#"><img src="./facebook.png" alt=""></a>
+                <a href="#"><img src="./twitter.png" alt=""></a>
             </div>
         </div>
     </header>
     <div class="container">
-        <div class="firstContainer">
+        <div class="firstContainer text-white">
             <div class="leftContainer">
-                    <div class="listleft">
-                        <h1 class="title">Conquistos</h1>
-                        <h2>Le jeu RP medieval qui vous fait gagner des Ether !</h2>
-                    </div>
+                <div class="listleft">
+                    <h2>Le jeu RP medieval qui vous fait gagner des Ether !</h2>
+                    <p>Grace a ce tout nouveau super jeu RP que la societe Ynovonsetvous a developper, vous pourrez gagner des ether, debloquez des NFT et les revendre dans le jeu, pour devenir le plus fort de tous les temps. Alors n'attendez plus !</p>
+                    <button class="colored">Rejoindre le jeu !</button>
+                </div>
             </div>  
             <div class="rightContainer">
                 <div class="listright">
-                   <!-- <img src="img.png" alt="zelda"> -->
+                    <h1 class="title">Conquistos</h1>
+                    <img src="img2.png" alt="zelda">
                 </div>
             </div>
         </div>
     </div>
-    <div class="container2">
-        <div class="secondContainer">
-            <div class="leftContainer2">
-                    <div class="listleft2">
-                        <!-- <img src="img.png" alt="zelda"> -->
-                    </div>
-            </div>  
-            <div class="rightContainer2">
-                <div class="listright2">
+    <hr>
+    <div class="container colored">
+        <div class="firstContainer">
+            <div class="leftContainer">
+                <div class="listleft">
                     <h1 class="title">Conquistos</h1>
+
+                    <img src="img1.png" alt="zelda">
+                </div>
+            </div>  
+            <div class="rightContainer">
+                <div class="listright">
                     <h2>Le jeu RP medieval qui vous fait gagner des Ether !</h2>
+                    <p>Grace a ce tout nouveau super jeu RP que la societe Ynovonsetvous a developper, vous pourrez gagner des ether, debloquez des NFT et les revendre dans le jeu, pour devenir le plus fort de tous les temps. Alors n'attendez plus !</p>
+                    <button>Rejoindre le jeu !</button>
                 </div>
             </div>
         </div>
@@ -86,5 +95,17 @@
         </div>
     </div>
     </footer>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script>
+    $('button').on('click', function(){
+        if($(this).css('margin-left') < '600px')
+            $(this).css('margin-left', '+=200px');
+        else 
+            $(this).css('margin-left', '0');
+    })
+  </script>
 </body>
 </html>

@@ -1,5 +1,12 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
 body{
     margin: 0;
+}
+.text-white {
+    color: white;;
 }
 .headercontainer{
     align-items: center;
@@ -12,7 +19,8 @@ body{
     padding: 6px;
 }
 a {
-    text-decoration: none;color: white;margin: 0 10px
+    text-decoration: none;color: white;margin: 0 10px;
+    transition: all 0.3s;;
 }
 .logo, img{
     height: 100%;
@@ -20,8 +28,7 @@ a {
 .menuheader{
     align-items: center;
     display: flex;
-    margin: 15px;
-    margin: 10px;
+    font-size: 22px;
 }
 .menuitems{
     align-items: center;
@@ -29,11 +36,18 @@ a {
     justify-content: flex-start;
     padding: 10px;
 }
+
+.menuitems a { 
+    margin: 0 30px;
+    border-bottom:solid 2px black;
+    transition: all 0.2s;
+}
 .container{
     background-color: brown;
     display: flex;
     min-height: 100vh;
     position: relative;
+    padding: 0 50px;
     
 }
 .firstContainer{
@@ -47,21 +61,8 @@ a {
     align-items: center;
 
 }
-.secondContainer{
-    width: 100%;
-    display: flex;
-}
-.container2{
+.colored{
     background-color: burlywood;
-    display: flex;
-    min-height: 100vh;
-    position: relative;
-}
-.leftContainer2, .rightContainer2{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .row, .h2, .ul{
     background-color: black;
@@ -72,3 +73,88 @@ a {
 }
 ul{padding: 0;}
 li{list-style: none; text-align: center; margin: 10px;}
+hr {
+    margin: 0 200px;
+    border: solid 2px black;;
+    background-color: black;
+    position: absolute;
+    width: 80vw;
+    margin-top: -2px;
+    z-index: 10;
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+a:hover {
+    color:brown;
+    border-color: brown;
+}
+
+.listright, .listleft {
+    width: 100%;
+    
+    margin: 0 30px;
+}
+
+.listright img, .listleft img {
+    height: auto;
+    border-radius: 50px;
+    width: 100%;
+    transform: rotateZ(-2deg);
+    border: solid 1px gray;
+    box-shadow: 4px 4px 7px black;
+} 
+
+h2 {
+    font-size: 35px;
+}
+.listright p, .listleft p {
+    width: 80%;
+    text-align: justify;
+    font-size: 22px;
+}
+
+button {
+    border: solid 2px white;
+    color: white;
+    background-color: brown;
+    padding: 10px 20px;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+button:hover {
+    cursor: pointer;
+    border-color: brown;
+    color: brown;
+    background-color: white;
+}
+
+button.colored {
+    background-color: burlywood;
+}
+
+.social a {
+    border-bottom: solid 2px black;
+}
+.social a:hover {
+    border-color: brown;
+}
+
+.container img:hover {
+    animation: tremblote 2s infinite;
+    cursor: pointer;
+}
+
+@keyframes tremblote {
+    
+    0% {transform: rotateZ(-2deg);}
+    10% {transform: rotateZ(2deg);}
+    20% {transform: rotateZ(-2deg);}
+    40% {transform: rotateZ(2deg);}
+    60% {transform: rotateZ(-2deg);}
+    80% {transform: rotateZ(2deg);}
+    100% {transform: rotateZ(-2deg);}
+}
